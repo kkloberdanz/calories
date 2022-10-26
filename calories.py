@@ -15,7 +15,7 @@ def parse_foods():
     return dct
 
 
-def main():
+def get_journal():
     foods = parse_foods()
     journal = pd.read_csv("Calories - Journal.csv")
 
@@ -29,11 +29,21 @@ def main():
     journal["Subtotals"] = journal.apply(
         lambda row: calc_calories(row), axis=1
     )
+    return journal
+
+
+def get_daily(journal):
     daily_calories = journal.groupby("Date", as_index=False)["Subtotals"].sum()
     daily_calories.rename(
         columns={"Subtotals": "Daily Calories"}, inplace=True
     )
     return daily_calories
+
+
+def main():
+    journal = get_journal()
+    daily = get_daily(journal)
+    return daily
 
 
 if __name__ == "__main__":
