@@ -45,6 +45,8 @@ def get_daily(journal):
     )
     calc_rolling_avg(daily_calories, 5)
     calc_rolling_avg(daily_calories, 30)
+    calc_rolling_avg(daily_calories, 365)
+    calc_rolling_avg(daily_calories, 2*365)
     return daily_calories
 
 
