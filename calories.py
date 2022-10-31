@@ -37,6 +37,9 @@ def get_daily(journal):
     daily_calories.rename(
         columns={"Subtotals": "Daily Calories"}, inplace=True
     )
+    rolling_avg_values = daily_calories["Daily Calories"][:5]
+    rolling_avg = rolling_avg_values.sum() / len(rolling_avg_values)
+    print(f"5 day rolling average = {rolling_avg}")
     return daily_calories
 
 
