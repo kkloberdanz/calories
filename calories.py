@@ -32,14 +32,19 @@ def get_journal():
     return journal
 
 
+def calc_rolling_avg(daily_calories, days):
+    rolling_avg_values = daily_calories["Daily Calories"][:days]
+    rolling_avg = rolling_avg_values.sum() / len(rolling_avg_values)
+    print(f"{days} day rolling average = {rolling_avg}")
+
+
 def get_daily(journal):
     daily_calories = journal.groupby("Date", as_index=False)["Subtotals"].sum()
     daily_calories.rename(
         columns={"Subtotals": "Daily Calories"}, inplace=True
     )
-    rolling_avg_values = daily_calories["Daily Calories"][:5]
-    rolling_avg = rolling_avg_values.sum() / len(rolling_avg_values)
-    print(f"5 day rolling average = {rolling_avg}")
+    calc_rolling_avg(daily_calories, 5)
+    calc_rolling_avg(daily_calories, 30)
     return daily_calories
 
 
