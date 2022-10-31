@@ -2,6 +2,7 @@
 
 
 import pandas as pd
+import numpy as np
 
 
 def parse_foods():
@@ -34,19 +35,24 @@ def get_journal():
 
 def calc_rolling_avg(daily_calories, days):
     rolling_avg_values = daily_calories["Daily Calories"][:days]
-    rolling_avg = rolling_avg_values.sum() / len(rolling_avg_values)
+    rolling_avg = round(rolling_avg_values.sum() / len(rolling_avg_values))
     print(f"{days} day rolling average = {rolling_avg}")
 
 
 def get_daily(journal):
-    daily_calories = journal.groupby("Date", as_index=False)["Subtotals"].sum()
+    daily_calories = (
+        journal.groupby("Date", as_index=False)["Subtotals"].sum().round()
+    )
     daily_calories.rename(
         columns={"Subtotals": "Daily Calories"}, inplace=True
+    )
+    daily_calories["Daily Calories"] = (
+        daily_calories["Daily Calories"].round().astype(np.int64)
     )
     calc_rolling_avg(daily_calories, 5)
     calc_rolling_avg(daily_calories, 30)
     calc_rolling_avg(daily_calories, 365)
-    calc_rolling_avg(daily_calories, 2*365)
+    calc_rolling_avg(daily_calories, 2 * 365)
     return daily_calories
 
 
