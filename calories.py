@@ -35,6 +35,7 @@ def get_journal():
 
 def calc_rolling_avg(daily_calories, days):
     rolling_avg_values = daily_calories["Daily Calories"].iloc[1 : 1 + days]
+    days = min(len(rolling_avg_values), days)
     rolling_avg = round(rolling_avg_values.sum() / len(rolling_avg_values))
     print(f"{days} day rolling average = {rolling_avg}")
 
