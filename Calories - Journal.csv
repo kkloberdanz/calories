@@ -189,14 +189,14 @@ Date,Food,Number of Units
 2022-11-08,oat milk,0.5
 2022-11-08,belgian cookie,1
 2022-11-09,fruit smoothie,1
-2022-11-09,whey protien,1
+2022-11-09,whey protein,1
 2022-11-09,bread,1
 2022-11-09,butter,0.5
 2022-11-09,ellie salad,1
 2022-11-09,prosciutto,1
 2022-11-09,milk,0.5
-2022-11-09,whey protien,0.5
-2022-11-09,whey protien,1
+2022-11-09,whey protein,0.5
+2022-11-09,whey protein,1
 2022-11-09,beer,3
 2022-11-09,california chicken sandwich,1
 2022-11-09,flix fries,0.33
@@ -218,9 +218,9 @@ Date,Food,Number of Units
 2022-11-10,prosciutto,1
 2022-11-10,cheese,0.5
 2022-11-10,milk,0.5
-2022-11-10,whey protien,0.5
+2022-11-10,whey protein,0.5
 2022-11-11,fruit smoothie,1
-2022-11-11,whey protien,1
+2022-11-11,whey protein,1
 2022-11-11,bread,1
 2022-11-11,cheese,1
 2022-11-11,egg,1
@@ -251,14 +251,14 @@ Date,Food,Number of Units
 2022-11-12,wine,4
 2022-11-12,peanut butter cup,1
 2022-11-13,fruit smoothie,1
-2022-11-13,whey protien,1
+2022-11-13,whey protein,1
 2022-11-13,donut,1
 2022-11-13,bread,1
 2022-11-13,ham,1
 2022-11-13,cheese,1
 2022-11-13,tomato,1
 2022-11-13,milk,1
-2022-11-13,whey protien,1
+2022-11-13,whey protein,1
 2022-11-13,bread,1
 2022-11-13,cheese,2
 2022-11-13,prosciutto,1
@@ -267,7 +267,7 @@ Date,Food,Number of Units
 2022-11-13,pringles,20
 2022-11-13,wine,1
 2022-11-13,spaghetti,1
-2022-11-13,whey protien,1
+2022-11-13,whey protein,1
 2022-11-13,milk,0.5
 2022-11-13,belgian cookie,3
 2022-11-13,bread,1
@@ -283,3 +283,118 @@ Date,Food,Number of Units
 2022-11-14,yogurt,1
 2022-11-14,cheese,1
 2022-11-14,goldfish crackers,1
+2022-11-14,donut,1
+2022-11-14,spaghetti,1
+2022-11-14,prosciutto,2
+2022-11-14,milk,0.5
+2022-11-14,whey protein,1
+2022-11-14,belgian cookie,3
+2022-11-15,fruit smoothie,1
+2022-11-15,whey protein,1
+2022-11-15,belgian cookie,3
+2022-11-15,whey protein,1
+2022-11-15,milk,0.5
+2022-11-15,spaghetti,0.33
+2022-11-15,harvest blend,1
+2022-11-15,egg,1
+2022-11-15,bread,1
+2022-11-15,ham,1
+2022-11-15,cheese,1
+2022-11-15,tomato,1
+2022-11-15,donut,1
+2022-11-15,1k-meal,1
+2022-11-15,peanut butter cup,1
+2022-11-16,fruit smoothie,1
+2022-11-16,whey protein,1
+2022-11-16,stir fry vegetables,1
+2022-11-16,egg,1
+2022-11-16,scottish shortbread,1
+2022-11-16,rice pilaf,1
+2022-11-16,peanut butter cup,2
+2022-11-16,bread,1
+2022-11-16,ham,1
+2022-11-16,cheese,1
+2022-11-16,tomato,0.5
+2022-11-16,oat milk,0.5
+2022-11-16,whey protein,1
+2022-11-16,bread,1
+2022-11-16,cheese,1
+2022-11-16,ham,1
+2022-11-16,tomato,0.5
+2022-11-17,bread,1
+2022-11-17,egg,1
+2022-11-17,cheese,1
+2022-11-17,mayo,1
+2022-11-17,ham,1
+2022-11-17,peanut butter cup,1
+2022-11-17,800-meal,1
+2022-11-17,cocktail,1
+2022-11-17,rice pilaf,1
+2022-11-17,stir fry vegetables,1
+2022-11-17,whey protein,1
+2022-11-17,milk,0.5
+2022-11-17,tomato,0.5
+2022-11-17,egg wrap,1
+2022-11-17,cheese,1
+2022-11-18,fruit smoothie,1
+2022-11-18,whey protein,1
+2022-11-18,peanut butter cup,1
+2022-11-18,waffle,1
+2022-11-18,peas,0.67
+2022-11-18,corn,0.33
+2022-11-18,cheese,2
+2022-11-18,pizza,5
+2022-11-18,ice cream,1
+2022-11-18,cocktail,3
+2022-11-19,peanut butter cup,1
+2022-11-19,pizza,1
+2022-11-19,egg,1
+2022-11-19,fruit smoothie,1
+2022-11-19,vegetable soup,2
+2022-11-19,cheese,1
+2022-11-19,avocado,0.5
+2022-11-19,peanut butter cup,1
+2022-11-19,beer,1
+2022-11-19,prezels,11
+2022-11-20,prosciutto,1
+2022-11-20,fruit smoothie,1
+2022-11-20,vegetable soup,1
+2022-11-20,cheese,1
+2022-11-20,ham and cheese pinwheel,3
+2022-11-20,bread,2
+2022-11-20,butter,2
+2022-11-20,beer,1
+2022-11-20,bread,1
+2022-11-20,vegetable soup,1
+2022-11-20,peanut butter cup,1
+2022-11-21,fruit smoothie,1
+2022-11-21,bread,2
+2022-11-21,butter,2
+2022-11-21,bread,1
+2022-11-21,vegetable soup,1
+2022-11-21,peanut butter cup,1
+2022-11-21,bread,2
+2022-11-21,ham and cheese pinwheel,2
+2022-11-21,prosciutto,2
+2022-11-21,cheese,2
+2022-11-21,mayo,1
+2022-11-21,milk,0.5
+2022-11-21,whey protein,1
+2022-11-21,beer,1
+2022-11-21,cheese,1
+2022-11-21,prosciutto,1
+2022-11-22,bread,1
+2022-11-22,butter,1
+2022-11-22,mayo,1
+2022-11-22,cheese,1
+2022-11-22,prosciutto,1
+2022-11-22,peanut butter cup,2
+2022-11-22,vegetable soup,1
+2022-11-22,bread,1
+2022-11-22,spaghetti,1
+2022-11-22,peanut butter cup,1
+2022-11-22,beer,1
+2022-11-22,bread,1
+2022-11-22,mayo,1
+2022-11-22,prosciutto,1
+2022-11-22,cheese,1
