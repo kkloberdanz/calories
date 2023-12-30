@@ -7,7 +7,7 @@ import numpy as np
 
 def parse_foods():
     dct = {}
-    with open("Calories - Foods.csv") as f:
+    with open("/Users/kyle/Documents/calorie-count/Calories Per Gram-Table 1.csv") as f:
         f.readline()  # throw away header
         for line in f:
             line = line.strip()
@@ -18,14 +18,14 @@ def parse_foods():
 
 def get_journal():
     foods = parse_foods()
-    journal = pd.read_csv("Calories - Journal.csv")
+    journal = pd.read_csv("/Users/kyle/Documents/calorie-count/Calorie Tracking-Table 1.csv")
 
     def calc_calories(row):
         if row.Food not in foods:
             raise Exception(
                 f"food: '{row.Food}' does not have an entry in the Foods table"
             )
-        return row["Number of Units"] * foods[row.Food]
+        return row["Quantity (g)"] * foods[row.Food]
 
     journal["Subtotals"] = journal.apply(
         lambda row: calc_calories(row), axis=1
