@@ -31,9 +31,7 @@ def get_journal():
             )
         return row["Quantity (g)"] * foods[row.Food]
 
-    journal["Subtotals"] = journal.apply(
-        lambda row: calc_calories(row), axis=1
-    )
+    journal["Subtotals"] = journal.apply(calc_calories, axis=1)
     return journal
 
 
@@ -55,19 +53,19 @@ def get_daily(journal):
         daily_calories["Daily Calories"].round().astype(np.int64)
     )
     daily_calories = daily_calories.iloc[::-1].reset_index(drop=True)
-    calc_rolling_avg(daily_calories, 7)
-    calc_rolling_avg(daily_calories, 10)
-    calc_rolling_avg(daily_calories, 30)
-    calc_rolling_avg(daily_calories, 365)
-    calc_rolling_avg(daily_calories, 2 * 365)
     return daily_calories
 
 
 def main():
     journal = get_journal()
     daily = get_daily(journal)
-    return daily
+    calc_rolling_avg(daily, 7)
+    calc_rolling_avg(daily, 10)
+    # calc_rolling_avg(daily, 30)
+    # calc_rolling_avg(daily, 365)
+    # calc_rolling_avg(daily, 2 * 365)
+    print(daily.to_string(index=False))
 
 
 if __name__ == "__main__":
-    print(main())
+    main()
